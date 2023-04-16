@@ -1,0 +1,21 @@
+% Here is an initial encoding for you to test your rules on (it's the example
+% from the handout).
+%
+% You are welcome to define additional test cases.
+true_constant(1).
+false_constant(2).
+disjunction(3,1,2).
+true_constant(4).
+conjunction(5,3,4).
+
+%% BEGIN ANSWER
+% Define your rules here.
+% We will only grade your code between the "BEGIN ANSWER" and "END ANSWER" comments.
+
+% Here's a first rule to get you started! Add the rest of them...
+eval(L, true) :- true_constant(L).
+
+
+%% END ANSWER
+
+
