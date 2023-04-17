@@ -1,0 +1,21 @@
+name:                sexp-kit
+version:             0.1.0.0
+license:             BSD3
+license-file:        LICENSE
+author:              David Darais
+maintainer:          david.darais@gmail.com
+category:            Data
+build-type:          Simple
+cabal-version:       >=1.8
+
+library
+  exposed-modules:     Data.SExp
+                     , Data.SExp.Data
+                     , Data.SExp.Parser
+                     , Util.ToQQ
+                     , Util.ParsecQQ
+  other-modules:       
+  build-depends:       base >= 4.7 && < 5
+                     , template-haskell ==2.*
+                     , parsec ==3.1.*
+                     , containers
